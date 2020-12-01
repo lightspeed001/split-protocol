@@ -1,0 +1,72 @@
+$nav-size: 7rem;
+
+html {
+	height: 100%;
+}
+body {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+}
+p {
+	font-size: 1.8rem;
+	font-weight: 900;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+.nav-container {
+	width: calc(100% - 2rem);
+	position: fixed;
+	bottom: 0;
+	left: 1rem;
+	height: $nav-size + 1rem;
+}
+
+.nav {
+	border: 3px solid $color-text;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.active {
+		pointer-events: initial;
+	}
+	svg {
+		height: 1.5rem;
+		overflow: visible;
+	}
+	width: $nav-size;
+	height: $nav-size;
+	border-radius: $nav-size;
+	position: absolute;
+	left: 1rem;
+	background: $color-bg;
+	font-size: 1.8rem;
+	nav {
+		position: absolute;
+
+		bottom: calc(100% + 1.5rem);
+		width: 15rem;
+		pointer-events: none;
+		a {
+			text-align: center;
+			border: 1px solid $color-text;
+			opacity: 0;
+			display: block;
+			width: 100%;
+			padding: 1.5rem;
+			line-height: 1;
+		}
+		a + a {
+			margin-top: 0.5rem;
+		}
+	}
+}

@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
         <link rel="stylesheet" href="./assets/styles/main-styles.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./assets/styles/sass/nav-styles.css" type="text/css" media="all">
         <!--
             <link rel="stylesheet" href="./assets/styles/split-styles.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/base-styles.css" type="text/css" media="all">
@@ -21,7 +22,6 @@
         [...]
         </header>
         -->
-        
         <main>
             <section class="mast">
                 <!--https://unsplash.it/1800/800?image=893-->
@@ -38,6 +38,26 @@ And I'll tell you how I became the prince of Bel Air.</p>
 <!--
 <div class="placeholder"></div>
 -->
+
+<div class="nav-container">
+	<div class="nav nav--mobile">
+
+		<svg id="burger" version="1.1" x="0px" y="0px" width="35px" height="15px" viewBox="0 0 35 15" enable-background="new 0 0 35 15" xml:space="preserve">
+<line id="burger__upper" fill="none" stroke="white" stroke-miterlimit="10" x1="0" y1="1" x2="35" y2="1"/>
+<line id="burger__middle" fill="none" stroke="white" stroke-miterlimit="10" x1="0" y1="7.5" x2="35" y2="7.5"/>
+<line id="burger__lower" fill="none" stroke="white" stroke-miterlimit="10" x1="0" y1="14" x2="35" y2="14"/>
+</svg>
+
+		<nav>
+			<a>Contact</a>
+			<a>About</a>
+			<a>Lab</a>
+			<a>Work</a>
+			<a>Home</a>
+		</nav>
+		
+	</div>
+</div>
                 
             </section>
         </main>
@@ -68,8 +88,8 @@ And I'll tell you how I became the prince of Bel Air.</p>
   spanizeLetters.init();
 })(jQuery);
         </script>
-        <!--
         <script src="./assets/js/nav-script.js"></script>
+        <!--
         <script src="./assets/js/split-script.js"></script>
         -->        
         </body>

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i");
+input:focus {
+  outline: none; }
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 10px; }
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100%;
+  background: black;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.75; }
+
+*,
+*:before,
+*:after {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit; }
+
+*:focus {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  color: white; }
+
+:-moz-placeholder {
+  color: white; }
+
+::-moz-placeholder {
+  color: white; }
+
+:-ms-input-placeholder {
+  color: white; }
+
+::selection {
+  color: black;
+  background: white; }
+
+label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 2rem; }
+  label:hover {
+    cursor: pointer; }
+  label.text span {
+    line-height: 1;
+    width: 100%;
+    display: block;
+    margin: 0 0 1rem; }
+  label.text input {
+    width: 100%;
+    display: block; }
+  label.checkbox input, label.radio input {
+    margin: 0 1rem 0 0; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  background-size: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='1792' width='1792' xmlns='http://www.w3.org/2000/svg'><path d='M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z'/></svg>"); }
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>"); }
+
+input[type="radio"] {
+  border-radius: 10rem; }
+
+select,
+input {
+  appearance: none;
+  border: none;
+  padding: 0.75em;
+  border-radius: 6px;
+  background-color: transparent;
+  line-height: 1;
+  border: 1px solid white;
+  color: white;
+  display: block;
+  font-size: inherit; }
+  select:hover,
+  input:hover {
+    cursor: pointer; }
+
+button,
+.button {
+  font-size: inherit;
+  font-weight: 700;
+  appearance: none;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 6px;
+  background: white;
+  color: black;
+  display: inline-block;
+  margin: 1rem 0 2rem;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none; }
+  button .button--block,
+  .button .button--block {
+    display: block;
+    width: 100%; }
+  button:hover,
+  .button:hover {
+    cursor: pointer;
+    background-color: #f2f2f2; }
+
+a {
+  color: inherit;
+  text-decoration: underline; }
+
+sup {
+  display: inline-block;
+  font-size: 0.75em;
+  vertical-align: super; }
+
+html {
+  height: 100%; }
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%; }
+
+p {
+  font-size: 1.8rem;
+  font-weight: 900; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+.nav-container {
+  width: calc(100% - 2rem);
+  position: fixed;
+  bottom: 0;
+  left: 1rem;
+  height: 8rem; }
+
+.nav {
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 7rem;
+  position: absolute;
+  left: 1rem;
+  background: black;
+  font-size: 1.8rem; }
+  .nav.active {
+    pointer-events: initial; }
+  .nav svg {
+    height: 1.5rem;
+    overflow: visible; }
+  .nav nav {
+    position: absolute;
+    bottom: calc(100% + 1.5rem);
+    width: 15rem;
+    pointer-events: none; }
+    .nav nav a {
+      text-align: center;
+      border: 1px solid white;
+      opacity: 0;
+      display: block;
+      width: 100%;
+      padding: 1.5rem;
+      line-height: 1; }
+    .nav nav a + a {
+      margin-top: 0.5rem; }
+
+/*# sourceMappingURL=nav-styles.css.map */
