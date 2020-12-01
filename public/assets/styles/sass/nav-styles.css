@@ -10,7 +10,9 @@ html {
 body {
   font-family: "Karla", sans-serif;
   min-height: 100%;
-  background: black;
+  background: url(../../img/893-1800x800.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: white;
   font-size: 1.6rem;
   line-height: 1.75; }
@@ -171,8 +173,7 @@ p {
   .nav nav {
     position: absolute;
     bottom: calc(100% + 1.5rem);
-    width: 15rem;
-    pointer-events: none; }
+    width: 15rem; }
     .nav nav a {
       text-align: center;
       border: 1px solid white;
