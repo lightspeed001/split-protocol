@@ -5,24 +5,43 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
         <link rel="stylesheet" href="./assets/styles/sass/nav-styles.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/split-styles.css" type="text/css" media="all">
-        <!--
-        <link rel="stylesheet" href="./assets/styles/split-styles.css" type="text/css" media="all">
-        <link rel="stylesheet" href="./assets/styles/base-styles.css" type="text/css" media="all">
-        -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js"></script>
+        <script src="https://kit.fontawesome.com/d760f55471.js" crossorigin="anonymous"></script>
         <title>Split Protocol</title>
+    <style>
+canvas {
+   background:none;
+   /**margin:auto;**/ /** cancel **/
+   position: absolute; /** absolute **/
+   left:50%;
+   top:50%;
+   transform:translateX(-50%) translateY(-50%);
+   padding-bottom: 28%;
+}
+
+mobileHide { display: inline;}
+    /* Portrait and Landscape for smartphones */
+@media only screen and (min-device-width : 50px) and (max-device-width : 670px) {
+        .mobileHide { display: none;}
+    }
+
+@media screen and (max-device-width: 400px) {
+   div[class=mobilecontent]{
+   display: block !important;
+   max-height: none !important;}
+}
+    </style>
     </head>
-    <body style="overflow: hidden;">
-        <!--
-            <header role="banner">
-        [...]
-        </header>
-        -->
+    <body style="overflow: hidden;">        
            <p>
+            <div class="mobileHide">
+                <canvas></canvas>
+            </div>
+
             <div class="placeholder"></div>
            </p>
            
@@ -36,9 +55,9 @@
 </svg>
 		<nav>
             <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5b3f693efd5710106eb2eac839368364acb5a70f">Uniswap</a>
-			<a href="#">Medium</a>
-			<a href="#">Telegram</a>
-			<a href="#">Twitter</a>
+			<a href="#"><i class="fab fa-medium-m fa-1.5x"></i></a>
+			<a href="#"><i class="fab fa-telegram-plane fa-1.5x"></i></a>
+			<a href="#"><i class="fab fa-twitter fa-1.5x"></i></a>
 		</nav>
 		
 	</div>
@@ -51,5 +70,6 @@
         -->
         <script src="./assets/js/split-script.js"></script>
         <script src="./assets/js/nav-script.js"></script>
+        <script src="./assets/js/logo-glitch.js"></script>
         </body>
 </html>
