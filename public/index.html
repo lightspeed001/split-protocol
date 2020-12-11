@@ -39,6 +39,10 @@ mobileHide { display: inline;}
    max-height: none !important;
     }
 }
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
     </style>
     </head>
     <body style="overflow: hidden;">        
@@ -58,12 +62,13 @@ mobileHide { display: inline;}
 <line id="burger__lower" fill="none" stroke="white" stroke-miterlimit="10" x1="0" y1="14" x2="35" y2="14"/>
 </svg>
 		<nav>
-            <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5b3f693efd5710106eb2eac839368364acb5a70f">Uniswap</a>
-			<a href="#"><i class="fab fa-medium-m fa-1.5x"></i></a>
-			<a href="https://t.me/joinchat/KSw080_2JrnSw6rMp9yWlg"><i class="fab fa-telegram-plane fa-1.5x"></i></a>
-      <a href="https://twitter.com/Split_Network"><i class="fab fa-twitter fa-1.5x"></i></a>
-      <a class="md-trigger" data-modal="modal-13" href="#"><i class="fa fa-info-circle fa-1.5x"></i></a>
-      <a href="https://github.com/lightspeed001/split-protocol"><i class="fab fa-github fa-1.5x"></i></a>
+            <a class="zoom" style="display: none;" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5b3f693efd5710106eb2eac839368364acb5a70f">Uniswap</a>
+            <a class="zoom" href="#">Presale</a>
+			<a class="zoom" href="#"><i class="fab fa-medium-m fa-1.5x"></i></a>
+			<a class="zoom" href="https://t.me/joinchat/KSw080_2JrnSw6rMp9yWlg"><i class="fab fa-telegram-plane fa-1.5x"></i></a>
+      <a class="zoom" href="https://twitter.com/Split_Network"><i class="fab fa-twitter fa-1.5x"></i></a>
+      <a class="zoom" class="md-trigger" data-modal="modal-13" href="#"><i class="fa fa-info-circle fa-1.5x"></i></a>
+      <a class="zoom" href="https://github.com/lightspeed001/split-protocol"><i class="fab fa-github fa-1.5x"></i></a>
 		</nav>
 		
 	</div>
