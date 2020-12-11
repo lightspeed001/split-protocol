@@ -16,7 +16,7 @@ document.body.onload = function() {
       ctxHidden.textAlign = 'center'
       ctxHidden.textBaseLine = 'middle'
       ctxHidden.font = 'bold 70px VT323, monospace'
-      ctxHidden.fillStyle = '#bf320b';
+      ctxHidden.fillStyle = '#FFF';
 
       ctxHidden.fillText('SPLIT PROTOCOL', canvasHidden.width/2, canvasHidden.height/2)
       

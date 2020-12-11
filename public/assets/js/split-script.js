@@ -1,5 +1,5 @@
 var options = {
-    imgSrc : "https://unsplash.it/g/1024/768?image=874",
+    imgSrc : "./assets/img/874-1024x768-grayscale-2.png",
     containerName : "placeholder",
     rows:5,
     columns:5,
