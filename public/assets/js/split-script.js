@@ -1,5 +1,5 @@
 var options = {
-    imgSrc : "./assets/img/874-1024x768-grayscale-2.png",
+    imgSrc : "./assets/img/NewProject-4.png",
     containerName : "placeholder",
     rows:5,
     columns:5,

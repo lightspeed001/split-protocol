@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="./assets/styles/sass/nav-styles.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/split-styles.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/modal-styles.css" type="text/css" media="all">
-        <link rel="stylesheet" href="./assets/styles/loader.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./assets/styles/header.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./assets/styles/loader-2.css" type="text/css" media="all">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
@@ -45,7 +46,18 @@ mobileHide { display: inline;}
 }
     </style>
     </head>
-    <body style="overflow: hidden;">        
+    <body style="overflow: hidden;">    
+
+<!-- Header Alert with call to action -->
+<div id="alert-banner" class="alert-banner" style="display:none;">
+  <div class="alert-banner-content">
+    <div class="alert-banner-text">Presale is scheduled for <b>December 2020</b></div>
+    <a class="alert-banner-button" href="#">PRESALE</a>
+  </div>
+  <div class="alert-banner-close"></div>
+</div>
+
+    
            <p>
             <div class="mobileHide">
                 <canvas></canvas>
@@ -62,8 +74,8 @@ mobileHide { display: inline;}
 <line id="burger__lower" fill="none" stroke="white" stroke-miterlimit="10" x1="0" y1="14" x2="35" y2="14"/>
 </svg>
 		<nav>
-            <a class="zoom" style="display: none;" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5b3f693efd5710106eb2eac839368364acb5a70f">Uniswap</a>
-            <a class="zoom" href="#">Presale</a>
+      <a class="zoom" style="display: none;" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5b3f693efd5710106eb2eac839368364acb5a70f">Uniswap</a>
+      <a class="zoom" data-modal="modal-13" href="#">Presale</a>
 			<a class="zoom" href="#"><i class="fab fa-medium-m fa-1.5x"></i></a>
 			<a class="zoom" href="https://t.me/joinchat/KSw080_2JrnSw6rMp9yWlg"><i class="fab fa-telegram-plane fa-1.5x"></i></a>
       <a class="zoom" href="https://twitter.com/Split_Network"><i class="fab fa-twitter fa-1.5x"></i></a>
@@ -94,8 +106,8 @@ mobileHide { display: inline;}
             </div>
         </div>
         <div class="md-overlay"></div>
-
-        <div id="loader" class="background-loader">
+<!--
+<div id="loader" class="background-loader">
           <div class="loader">
             <span class="spinner spinner1"></span>
             <span class="spinner spinner2"></span>
@@ -104,16 +116,33 @@ mobileHide { display: inline;}
             <span class="loader-text">LOADING...</span>
           </div>
         </div>
+-->
+<div id="loader" class="background-loader">
+  <div class="loader">Loading</div>
+</div>
+
+<script>
+  $(function(){ 
+$('.alert-banner-close').on('click', function() {
+  $(this).parent().remove();
+});
+
+  });
+</script>
 
         <script>
           $(function() {
-              var loadTime = 15000;
+              var loadTime = 18000;
               //$('body').append(loadingMarkup);
              // $('.overlay, .loading').fadeIn();
               setTimeout(function(){
                   $('#loader').fadeOut(function(){
                       $(this).remove();
                   })
+                  $('#alert-banner').fadeIn(function(){
+                     $(this).css("display","");
+                  });
+
                   },loadTime);
 });
       </script>
