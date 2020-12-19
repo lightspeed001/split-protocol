@@ -6,7 +6,7 @@
         <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="./assets/styles/sass/nav-styles.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/split-styles.css" type="text/css" media="all">
-        <link rel="stylesheet" href="./assets/styles/modal-styles.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./assets/styles/modal-styles-2.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/header.css" type="text/css" media="all">
         <link rel="stylesheet" href="./assets/styles/loader-2.css" type="text/css" media="all">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -34,12 +34,14 @@ mobileHide { display: inline;}
         .mobileHide { display: none;}
     }
 
+/**
 @media screen and (max-device-width: 400px) {
    div[class=mobilecontent]{
    display: block !important;
    max-height: none !important;
     }
 }
+**/
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -51,13 +53,13 @@ mobileHide { display: inline;}
 <!-- Header Alert with call to action -->
 <div id="alert-banner" class="alert-banner" style="display:none;">
   <div class="alert-banner-content">
-    <div class="alert-banner-text">Presale is scheduled for <b>December 2020</b></div>
-    <a class="alert-banner-button" href="#">PRESALE</a>
+    <div class="alert-banner-text">High Yield Defi Experiment, Presale is scheduled for <b>22 December 2020</b></div>
+    <a class="alert-banner-button modal-trigger-2" data-modal="modal-name-2" href="#">PRESALE</a>
   </div>
   <div class="alert-banner-close"></div>
 </div>
 
-    
+   
            <p>
             <div class="mobileHide">
                 <canvas></canvas>
@@ -75,37 +77,65 @@ mobileHide { display: inline;}
 </svg>
 		<nav>
       <a class="zoom" style="display: none;" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5b3f693efd5710106eb2eac839368364acb5a70f">Uniswap</a>
-      <a class="zoom" data-modal="modal-13" href="#">Presale</a>
+      <a class="zoom modal-trigger-2" data-modal="modal-name-2" href="#">Presale</a>
 			<a class="zoom" href="#"><i class="fab fa-medium-m fa-1.5x"></i></a>
-			<a class="zoom" href="https://t.me/joinchat/KSw080_2JrnSw6rMp9yWlg"><i class="fab fa-telegram-plane fa-1.5x"></i></a>
+			<a class="zoom" href="https://t.me/SPLITProtocol"><i class="fab fa-telegram-plane fa-1.5x"></i></a>
       <a class="zoom" href="https://twitter.com/Split_Network"><i class="fab fa-twitter fa-1.5x"></i></a>
-      <a class="zoom" class="md-trigger" data-modal="modal-13" href="#"><i class="fa fa-info-circle fa-1.5x"></i></a>
-      <a class="zoom" href="https://github.com/lightspeed001/split-protocol"><i class="fab fa-github fa-1.5x"></i></a>
+      <a class="modal-trigger" data-modal="modal-name" href="#"><i class="fa fa-info-circle fa-1.5x"></i></a>
+      <!--https://github.com/lightspeed001/split-protocol-->
+      <a class="zoom" href="#"><i class="fab fa-github fa-1.5x"></i></a>
 		</nav>
 		
 	</div>
 </div>     
-        <!--
-        <footer role="contentinfo">
-            [...]
-        </footer>
-        -->
 
-        <div class="md-modal md-effect-13" id="modal-13">
-            <div class="md-content">
-                <h3>Split Protocol</h3>
-                <div>
-                    <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-                    <button class="md-close">Close</button>
-                </div>
-            </div>
-        </div>
-        <div class="md-overlay"></div>
+<!-- Modal -->
+<div class="modal" id="modal-name">
+  <div class="modal-sandbox"></div>
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="close-modal">&#10006;</div> 
+      <h1 style="text-align: center;">Split Protocol</h1>
+    </div>
+    <div class="modal-body" style="text-align: center;">
+      <p>Split protocol brings you an experimental deflationary stake free “farming” protocol. There will be a % transaction on all fees, initial presale buyers will be excluded from this initial fee.</p>
+      <p>There will be a % transaction on all fees, initial presale buyers will be excluded from this initial fee.</p>
+      <p>There will be 4 main functions that the protocol uses;</p>
+      <p>🔸 4% Rewards for LP holders, Stake SPLIT/ETH and receive rewards instantly into your wallet from tx.</p>
+      <p>🔸 3% burn on all tx, this will decrease the supply over time and add a deflationary effect.</p>
+      <p>🔸 2% Rewards for Token Holders, just for holding SPLIT in your wallet you will receive airdrops from all tx.</p>
+      <p>🔸 1% Rewards Wallet Tax, where coins will be distributed to one wallet to be used for giveaways, promo, and airdrop.</p>
+      <p>🔹NO bonus structure, fair launch</p>
+      <p>🔹Liq to be locked through UNC upon presale completion</p>
+      <p style="size: small;"><a href="https://t.me/SPLITProtocol">Join our Telegram!</a></p>
+      <br />
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal-name-2">
+  <div class="modal-sandbox"></div>
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="close-modal">&#10006;</div> 
+      <h1 style="text-align: center;">Presale</h1>
+    </div>
+    <div class="modal-body" style="text-align: center;">
+      <p>NO bonus structure, fair launch</p>
+      <p>Liq to be locked through UNC upon presale completion</p>
+      <p>Total Supply: 1000 SPLIT</p>
+      <p>1 ETH = 3.15 SPLIT</p>
+      <p>ETH limit per wallet: 2 eth</p>
+      <p>Hardcap: 150 ETH</p>
+      <p>Presale date: 12/22/20 12PM PST</p>
+      <p>No Whitelist, FCFS</p>
+      <p>100% of ETH raised goes to liq</p>
+      <p style="size: small;"><a href="https://t.me/SPLITProtocol">Join our Telegram!</a></p>
+      <br />
+    </div>
+  </div>
+</div>
 <!--
 <div id="loader" class="background-loader">
           <div class="loader">
@@ -146,123 +176,20 @@ $('.alert-banner-close').on('click', function() {
                   },loadTime);
 });
       </script>
-        
         <script>
-            ( function( window ) {
+          $(function(){
+            $(".modal-trigger, .modal-trigger-2").click(function(e){
+  e.preventDefault();
+  dataModal = $(this).attr("data-modal");
+  $("#" + dataModal).css({"display":"block"});
+  // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+});
 
-'use strict';
-
-// class helper functions from bonzo https://github.com/ded/bonzo
-
-function classReg( className ) {
-  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-}
-
-// classList support for class management
-// altho to be fair, the api sucks because it won't accept multiple classes at once
-var hasClass, addClass, removeClass;
-
-if ( 'classList' in document.documentElement ) {
-  hasClass = function( elem, c ) {
-    return elem.classList.contains( c );
-  };
-  addClass = function( elem, c ) {
-    elem.classList.add( c );
-  };
-  removeClass = function( elem, c ) {
-    elem.classList.remove( c );
-  };
-}
-else {
-  hasClass = function( elem, c ) {
-    return classReg( c ).test( elem.className );
-  };
-  addClass = function( elem, c ) {
-    if ( !hasClass( elem, c ) ) {
-      elem.className = elem.className + ' ' + c;
-    }
-  };
-  removeClass = function( elem, c ) {
-    elem.className = elem.className.replace( classReg( c ), ' ' );
-  };
-}
-
-function toggleClass( elem, c ) {
-  var fn = hasClass( elem, c ) ? removeClass : addClass;
-  fn( elem, c );
-}
-
-var classie = {
-  // full names
-  hasClass: hasClass,
-  addClass: addClass,
-  removeClass: removeClass,
-  toggleClass: toggleClass,
-  // short names
-  has: hasClass,
-  add: addClass,
-  remove: removeClass,
-  toggle: toggleClass
-};
-
-// transport
-if ( typeof define === 'function' && define.amd ) {
-  // AMD
-  define( classie );
-} else {
-  // browser global
-  window.classie = classie;
-}
-
-})( window );
-
-var ModalEffects = (function() {
-
-	function init() {
-
-		var overlay = document.querySelector( '.md-overlay' );
-
-		[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
-
-			var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
-				close = modal.querySelector( '.md-close' );
-
-			function removeModal( hasPerspective ) {
-				classie.remove( modal, 'md-show' );
-
-				if( hasPerspective ) {
-					classie.remove( document.documentElement, 'md-perspective' );
-				}
-			}
-
-			function removeModalHandler() {
-				removeModal( classie.has( el, 'md-setperspective' ) ); 
-			}
-
-			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
-
-				if( classie.has( el, 'md-setperspective' ) ) {
-					setTimeout( function() {
-						classie.add( document.documentElement, 'md-perspective' );
-					}, 25 );
-				}
-			});
-
-			close.addEventListener( 'click', function( ev ) {
-				ev.stopPropagation();
-				removeModalHandler();
-			});
-
-		} );
-
-	}
-
-	init();
-
-})();
+$(".close-modal, .modal-sandbox").click(function(){
+  $(".modal").css({"display":"none"});
+  // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+});
+          });
         </script>
         <script src="./assets/js/split-script.js"></script>
         <script src="./assets/js/nav-script.js"></script>
